@@ -1,3 +1,4 @@
+getData();
 async function getData(){
     try{
         console.log("clicked")
@@ -14,8 +15,9 @@ async function getData(){
     }
 
 }
-getData();
-let loginDataArray=[];
+
+let loginDataArray=JSON.parse(localStorage.getItem("userLogin"))||[];
+let loginData=[];
 getData().then((data)=>{
     loginDataArray=[...data];
     console.log(loginDataArray)
@@ -35,6 +37,7 @@ function handleLogin(){
     {
         alert("Logged in as Admin.")
         window.location.href="./admin.html"
+        let loginData=localStorage.setItem("userLogin",JSON.stringify(loginData))
     }
     else{
         alert("Invalid email")
@@ -42,6 +45,5 @@ function handleLogin(){
     
 }
 
-//
-//
+
 
