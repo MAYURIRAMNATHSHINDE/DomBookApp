@@ -1,9 +1,9 @@
-let data=[
-    {
-    "email":"emp@gmail.com",
-    "password":"abc123"
-    }
-]
+// let data=[
+//     {
+//     "email":"emp@gmail.com",
+//     "password":"abc123"
+//     }
+// ]
 
 getData();
 async function getData(){
@@ -12,8 +12,8 @@ async function getData(){
         let res=await fetch("https://assorted-buttoned-pike.glitch.me/login");
         console.log("succ")
         let data=await res.json();
-        //return data;
-        console.log(data)
+        return data;
+        //console.log(data)
 
     }
     catch(err)
