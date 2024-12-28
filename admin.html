@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div id="cont"></div>
+</body>
+<script src="./script/index.js" type="module"></script>
+</html>
+
+<!-- admin.html (Admin Management Page)
+Retrieve loginData from localStorage. If data is not found or the email in loginData is not admin@empher.com, redirect to the home page and provide the alert: Admin Not Logged In.
+
+The Admin page includes a form to add new books with:
+
+Fields for title, author, and category.
+A select dropdown for the category with options: fiction, comedy, and technical.
+On submission:
+
+Send a POST request to the JSON server with the entered data.
+Display an alert: "Book Added Successfully."
+Display all books in a grid layout (4 books per row):
+
+Each book appears as a card showing:
+Title, Author, Category, Availability Status, and Borrowed Days (if applicable).
+Include two buttons: Verify Book and Delete Book.
+Verify Button:
+Show a confirmation prompt stating: Are you sure to Verify..?. On clicking Yes:
+Set the isVerified status to true.
+Once verified, disable the Verify Book button (button.disabled = true).
+Save the changes using a PATCH request and update the UI.
+Delete Button:
+Show a confirmation prompt stating: Are you sure to Delete..?. On clicking Yes:
+Delete the book using a DELETE request and update the UI. -->

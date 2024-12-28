@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management App</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    
+    <div id="cont"></div>
+
+   <form id="form">
+    <input type="text" id="email" placeholder="Enter email here...">
+    <input type="password" id="password" placeholder="Enter password here...">
+    <input type="submit" value="login">
+
+   </form>
+
+
+</body>
+
+
+<script src="./script/index.js" type="module"></script>
+<script src="./script/navbar.js"></script>
+<script src="./script/login.js"></script>
+
+
+
+</html>
+
+<!-- index.html (Login Page)
+Contains a login form with:
+Two input fields: Email and Password
+Upon form submission:
+Validate the credentials:
+Admin Login:
+Email: admin@empher.com
+Password: empher@123
+Redirect to admin.html and show an alert: "Logged in as Admin."
+User Login:
+Email: user@empher.com
+Password: user@123
+Redirect to books.html.
+If credentials are incorrect, display an error message.
+On successful login, save user details in localStorage as loginData. -->
+

@@ -1,0 +1,21 @@
+#cont{
+    background-color: pink;
+    padding: 5px;
+
+}
+#cont div{
+    display: flex;
+    align-items: center;
+
+}
+#cont div a{
+    text-decoration: none;
+    color: white;
+    margin-left:60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#cont div a:hover{
+    color: skyblue;
+}
