@@ -1,9 +1,3 @@
-// let data=[
-//     {
-//     "email":"emp@gmail.com",
-//     "password":"abc123"
-//     }
-// ]
 
 getData();
 async function getData(){
